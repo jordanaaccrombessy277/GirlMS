@@ -1,0 +1,8 @@
+:root{
+    --couleurPrincipal:green;
+    --couleurSecondaire:blue;
+}
+
+body{
+    /* color:var(--couleurPrincipal) */
+}

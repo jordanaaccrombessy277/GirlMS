@@ -1,1 +1,1 @@
-# GirlMS
+# MyMind
