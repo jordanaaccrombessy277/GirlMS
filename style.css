@@ -126,9 +126,9 @@ nav .openMenu{
     height:100px;
 }
 .avis-img img{
-    /* border-radius: 50%; */
+    border-radius: 50%;
     object-fit: cover;
-    object-position: 33px;
+    object-position:8px;
 }
 .mission{
     background-color: var(--colorP);
