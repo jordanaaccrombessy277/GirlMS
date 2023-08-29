@@ -1,6 +1,6 @@
 :root{
     --colorP:rgb(240, 10, 121);
-    --colorS:rgb(61, 213, 252);
+    /* --colorS:rgb(61, 213, 252); */
 }
 
 *{
@@ -9,7 +9,23 @@
     padding:0;
 }
 
-
+.ButtonTop{
+    height:50px;
+    width:50px;
+    background-color: white;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    cursor:pointer;
+    color:var(--colorP);
+}
+.topButton{
+   
+}
 body{
     font-family: 'Raleway', sans-serif;
 }
@@ -21,7 +37,7 @@ img{
     color:var(--colorP);
 }
 .borderP{
-border:1px solid rgb(240, 10, 121);
+border:1px solid var(--colorP);
 }
 nav{
     display: flex;
@@ -34,7 +50,7 @@ nav .mainMenu{
 nav .mainMenu li{
     padding-right:12px;
 }   
-nav .mainMenu li a, .savoir-plus, .participer{
+nav .mainMenu li a, .savoir-plus{
     display: inline-block;
     padding:15px;
     text-decoration: none;
@@ -95,23 +111,68 @@ nav .openMenu{
     color:white;
     border-radius: 25px;
   }
-  .participer{
-      background-color: white;
-      color:var(--colorP);
-      border:1px solid #086363;
-  }
 
-.who-are-we, .actions, .projets, .calendrier{
+.who-are-we, .actions,.calendrier{
   background-color: transparent;
   height:500px;
 }
 .projets{
     background-color: var(--colorP) !important;
     color:white;
+    height:550px !important;
+}
+.soutien-heros{
+    background-color: var(--colorP);
+    height:200px;
+}
+.soutien-ideas{
+    background-color: transparent;
+    height:700px;
+}
+.soutien-idea-bloc{
+    position: relative;
+    width:300px;
+    height:280px;
+}
+.soutien-idea-bloc span{
+  color:var(--colorP);
+}
+.soutien-idea-bloc a{
+    color:black;
+    position: absolute;
+    bottom:0;
 }
 .avis{
     background-color: var(--colorP);
-    height:300px; 
+    height:400px; 
+}
+footer{
+    background-color: var(--colorP);
+    height:400px; 
+    color:white;
+}
+.newsletter input{
+    border-radius:25px;
+    padding:5px 20px;
+    border:none;
+}
+.newsletter input[type="submit"]{
+    color:var(--colorP);
+    font-weight: bold;
+}
+footer .icons-i i{
+  padding: 10px;
+  font-size: 20px;
+}
+.accroche{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),url("images/pose.jpg");
+    height:500px;
+    background-position:90% 13%;
+    background-size: cover;
+}
+.accroche .bloc{
+    border:1px solid white;
+    height:400px;
 }
 /* .avis-commentaire::before{
    content :"“";
@@ -122,13 +183,12 @@ nav .openMenu{
     font-size:23px;
 } */
 .avis-img{
-    width:100px;
-    height:100px;
+    width:90%;
 }
 .avis-img img{
     border-radius: 50%;
     object-fit: cover;
-    object-position:8px;
+    /* object-position:8px; */
 }
 .mission{
     background-color: var(--colorP);
@@ -157,6 +217,27 @@ nav .openMenu{
 }
 table thead tr th{
     background-color:var(--colorP);
+}
+.actualite{
+    height:550px !important;
+}
+.actualite-bloc{
+    width:80%;
+}
+.participer, .soutien{
+    padding:13px 30px;
+    text-decoration: none;
+    border-radius:23px;
+    display: inline-block;
+}
+.participer{
+    background-color: white;
+    color:var(--colorP);
+    border:1px solid var(--colorP);
+}
+.soutien{
+    background-color:var(--colorP);
+    color:white;
 }
 @media(max-width:800px){
     .fa-bars{

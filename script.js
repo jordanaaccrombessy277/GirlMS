@@ -14,3 +14,13 @@ function hide(){
     mainMenu.style.top='-100%';
 } 
 
+const ButtonTop = document.querySelector('.ButtonTop');
+
+ButtonTop.addEventListener('click', ()=>{
+     window.scrollTo({
+        top:0,
+        left:0,
+        behavior:"smooth"
+     })
+})
+
