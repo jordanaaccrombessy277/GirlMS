@@ -275,6 +275,53 @@ table thead tr th{
         display: inline-block;
         padding:12px; 
     }
+    .who-are-we{
+        height:620px;
+    }
 
+    .mission{
+        height:900px;
+    }
+    .actions{
+        height:800px;
+    }
+    .projets{
+        height: 1300px !important;
+    }
+    .projets .projet-content{
+        margin-top:14px;
+    }
+    .calendrier{
+        height:900px;
+    }
+    .avis{
+        height:700px;
+    }
+    .avis .avis-img{
+        display: flex;
+        justify-content: center;
+    }
+    .avis .avis-img img{
+        width:40%;
+    }
+    .nom-avis{
+        text-align: center;
+    }
+    .actualite{
+        height: 950px !important;
+    }
+    .actualite .actualite-bloc{
+        margin-top:10px;
+    }
+    footer{
+        height: 650px;
+    }
+
+    .soutien-ideas{
+        height:2000px;
+    }
+    .soutien-ideas .soutien-idea-bloc{
+        margin-top:10px;
+    }
     
 }
