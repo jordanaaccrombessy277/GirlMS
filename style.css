@@ -28,6 +28,7 @@
 }
 body{
     font-family: 'Raleway', sans-serif;
+    overflow: hidden;
 }
 img{
     width:100%;
