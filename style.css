@@ -239,6 +239,32 @@ table thead tr th{
     background-color:var(--colorP);
     color:white;
 }
+.revealTop, .revealBottom, .revealLeft, .revealRight{
+    opacity:0;
+    transition:all 1s ease-in-out;
+}
+.revealTop{
+    transform:translateY(60px);
+}
+.revealBottom{
+    transform:translateY(-60px);
+}
+.revealLeft{
+    transform:translateX(60px);
+}
+.revealRight{
+    transform:translateX(-60px);
+}
+
+.revealTop.active,.revealBottom.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.revealLeft.active,.revealRight.active{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 @media(max-width:800px){
     .fa-bars{
         display: block;
